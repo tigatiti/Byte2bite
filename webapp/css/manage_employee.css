@@ -1,0 +1,256 @@
+body {
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background: #f5f7fa;
+  color: #1f2d3a;
+  margin: 0;
+  padding: 1rem 1rem 3rem;
+  line-height: 1.4;
+}
+
+h2, h3, h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1f2d3a;
+}
+
+h3 {
+   margin-top: 4rem;
+  font-size: 1.45rem;
+  color: #316bf4;
+}
+
+h4 {
+  font-size: 1.45rem;
+  color: #e62532;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0.5rem 0 1.5rem;
+  background: #fff;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px #1f2d3a14;
+}
+
+table thead {
+  background: linear-gradient(135deg, #eef2f7 0%, #d9e4fb 100%);
+  position: relative;
+}
+
+table th, table td {
+  padding: 0.75rem 0.85rem;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+table th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #316bf4;
+  border-bottom: 2px solid #2251CD4C; 
+}
+
+
+table thead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100px;
+  background: #316bf4;
+  border-radius: 2px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #e6e9ef;
+  font-size: 1.05rem;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #fcfdff;
+}
+
+table tbody tr:hover {
+  background: #2251CD0D;
+}
+
+table td {
+  color: #2f3e52;
+}
+
+form {
+  display: inline-block;
+  margin: 0;
+}
+
+select {
+  padding: 6px 10px;
+  border: 1px solid #c7d0e0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  font-size: 1.05rem;
+  min-width: 160px;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #f0f4fb;
+  border: 1px solid #316bf4; 
+  padding: 10px 44px 10px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s ease;
+  box-shadow: 0 12px 30px -8px #2251CD40;
+  color: #1f2d3a;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.custom-select select:hover {
+  background: #e8edfa;
+}
+
+.custom-select select:focus {
+  outline: none;
+  border-color: #316bf4;
+  box-shadow: 0 0 0 3px #2251CD59;
+}
+
+
+.custom-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.custom-select select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button, .btn {
+  background: #316bf4;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s, transform .1s;
+  box-shadow: 0 8px 25px -5px #2251CD66;
+}
+
+button:hover, .btn:hover {
+  background: #1b45a3;
+}
+
+button:active, .btn:active {
+  transform: translateY(1px);
+}
+
+
+p {
+  margin: 0.5rem 0;
+}
+
+p[style*="color:green"] {
+  background: #ecf7ed;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #c3e6c9;
+  color: #275e24;
+}
+
+p[style*="color:red"] {
+  background: #fbece8;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+  color: #8a1f1f;
+}
+
+
+
+body {
+  position: relative; 
+  min-height: 100vh;
+  
+}
+
+.user-info {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  padding: 6px 12px;
+  background: #316bf4;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.success {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  color: #3be232;
+  border: none;
+  box-shadow: none; 
+  font-weight: bold;
+}
+
+
+.main-link-container {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+}
+
+
+.main-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #fff;
+  color: #2251CD;
+  border: 1px solid #2251CD;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: filter .2s ease, transform .2s ease;
+}

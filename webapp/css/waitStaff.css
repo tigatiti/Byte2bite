@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #316bf4;
+}
+
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+
+.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #316bf4;
+  border-bottom: 2px solid #316bf4;
+  padding-bottom: 0.3rem;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+table tbody {
+  display: block; 
+}
+table tbody > div {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 0.5rem !important;
+}
+
+
+table tbody img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+
+table tbody label {
+  flex: 1;
+  font-weight: 500;
+}
+
+table tbody input[type="number"] {
+  width: 4em;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: 1rem;
+  transition: border-color 0.2s;
+}
+
+
+table tbody input[type="number"]:focus {
+  outline: none;
+  border-color: #316bf4;
+}
+
+
+table tbody input[type="number"]::-webkit-inner-spin-button,
+table tbody input[type="number"]::-webkit-outer-spin-button {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+
+input[type="submit"] {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #316bf4;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+input[type="submit"]:hover {
+  background-color: #274b9d;
+}
+
+@media (max-width: 600px) {
+  table tbody > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  table tbody img {
+    margin-bottom: 0.5rem;
+  }
+  table tbody input[type="number"] {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+}
